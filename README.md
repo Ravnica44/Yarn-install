@@ -1,6 +1,12 @@
 ```shell
 curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+```
+
+```shell
 echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+```
+
+```shell
 sudo apt update && sudo apt install yarn
 ```
 
