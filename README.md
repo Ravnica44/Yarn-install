@@ -5,8 +5,7 @@ sudo apt update && sudo apt install yarn
 ```
 
 ```shell
-echo 'export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"' >> ~/.bashrc
-source ~/.bashrc
+echo 'export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"' >> ~/.bashrc && source ~/.bashrc
 ```
 
 ```shell
