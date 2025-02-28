@@ -17,3 +17,8 @@ echo 'export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$
 ```shell
 yarn --version
 ```
+optional:
+
+```shell
+yarn cache clean
+```
