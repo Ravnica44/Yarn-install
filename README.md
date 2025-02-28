@@ -1,9 +1,9 @@
 ```shell
-curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo tee /usr/share/keyrings/yarn-archive-keyring.gpg >/dev/null
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo gpg --dearmor -o /usr/share/keyrings/yarn-archive-keyring.gpg
 ```
 
 ```shell
-echo "deb [signed-by=/usr/share/keyrings/yarn-archive-keyring.gpg] https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+gpg --no-default-keyring --keyring /usr/share/keyrings/yarn-archive-keyring.gpg --list-keys
 ```
 
 ```shell
